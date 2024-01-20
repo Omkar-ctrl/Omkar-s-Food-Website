@@ -7,3 +7,177 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+
+
+#cursor{
+    height: 100px;
+    width:  100px;
+    border-radius: 50%;
+    background-color: rgba(180, 253, 84, 0.998);
+    position: fixed;
+    filter: blur(35px);
+    z-index: 99;
+}
+
+
+nav{
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+    padding: 3vh 5vw;
+    position: fixed;
+    z-index: 5;
+}
+nav h2{
+    font-size: 1.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+nav img{
+    height: 15vh;
+    width:  8vw;
+}
+#page1{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+
+#page1 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    font-family: production;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: sf pro display semibold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    z-index: 10;
+}
+
+#page1 h1::before{
+    content: "EAT.REPEAT.ENJOY.";
+    position:absolute;
+    color: rgb(255, 30, 30);
+    top : -3px;
+    left: -6px;
+   -webkit-text-stroke :4px rgb(147, 255, 47);
+    z-index: -1;
+}
+#page1>#burger{
+
+   position: absolute;
+    top: 25%;
+    left:-3%;
+    z-index: 5;
+
+
+}
+
+#page1>#burger img{
+     transition: all ease 0.5s;
+ }
+
+#page1 h3{
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: production;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-text-stroke :1px   rgb(0, 0, 0);
+    margin-top: 3vh;
+    transform: translateX(-50%);
+    font-family: sf pro display semibold;
+    color: white;
+    width: 60%;
+}
+
+#page2{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color:#FDF8F5;
+}
+
+#page2>#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    padding: 60vh;
+}
+
+#page2>#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#page2>#scroller>#scroller_In{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 7vw;
+    font-weight: 800;
+    margin-right: 15px;
+    transition: all linear 0.4s;
+    color: transparent;
+    -webkit-text-stroke: 1.9px #95c11e;
+}
+
+#scroller h4:hover{
+    color: #95c11e;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    background-color: rgb(147, 73, 139);
+}
+
+
