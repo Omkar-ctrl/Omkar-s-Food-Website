@@ -147,7 +147,6 @@ tl2.to("#burger", {
     // markers:true,
     scrub: 4,
     
-
   },
 })
 tl4.to("#burger", {
