@@ -124,7 +124,7 @@ var tl2= gsap.timeline({
     start: "0% 70%",
     scroller:'#main',
     end: "30% 50%",
-    scrub: 4,
+    scrub: 3,
     
 
   },
@@ -145,7 +145,8 @@ tl2.to("#burger", {
     scroller:'#main',
     end: "30% 50%",
     // markers:true,
-    scrub: 4,
+    scrub: 3,
+
     
   },
 })
@@ -173,17 +174,43 @@ tl4.to("#burger", {
     scroller:'#main',
     end: "30% 50%",
     // markers:true,
-    scrub: 4,
+    scrub: 3,
     
 
   },
 })
 tl5.to("#burger", {
   
-    top: "295%",
+    top: "300%",
     left: "30%",
   });
 
+
+
+  var tl6= gsap.timeline({
+    scrollTrigger:{
+    trigger: "#page4",
+    start: "0% 70%",
+    scroller:'#main',
+    end: "30% 50%",
+    // markers:true,
+    scrub: 3,
+    
+
+  },
+})
+tl6.from("#panner", {
+    scale:2.4,
+    x: "100%",
+    y:"100%",
+    rotate:15,
+  },"burger");
+  tl6.from("#grilled", {
+    scale:2.4,
+    x: "-100%",
+    y:"100%",
+    rotate:15,
+  },"burger");
 
 
 
