@@ -408,7 +408,7 @@ footer * {
 h3 {
   width: 100%;
   text-align: left;
-  color: #2a8ded;
+  color: #94bb08;
   font-size: 1.6em;
   white-space: nowrap;
 }
@@ -427,7 +427,7 @@ ul li a {
   text-decoration: none;
 }
 ul li a:hover {
-  color: #2a8ded;
+  color: #94bb08;
 }
 .about p {
   text-align: justify;
@@ -443,7 +443,7 @@ button {
   margin-bottom: 5px;
 }
 button {
-  background-color: #2a8ded;
+  background-color: #94bb08;
   color: #ffffff;
 }
 div.social {
@@ -454,7 +454,7 @@ div.social {
   margin-top: 0.5em;
 }
 .social i:hover {
-  color: #2a8ded;
+  color: #94bb08;
 }
 .row.secondary {
   display: flex;
@@ -463,7 +463,7 @@ div.social {
 }
 .row.secondary i {
   font-size: 1.8em;
-  color: #2a8ded;
+  color: #94bb08;
 }
 .row.secondary div {
   padding: 1em 0;
